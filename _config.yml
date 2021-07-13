@@ -7,7 +7,7 @@ plugins: [jekyll-paginate, jekyll-gist]
 permalink:        pretty
 
 # Setup
-title:            Jingwen Lin
+title:            Jessie Lin
 tagline:          'A Jekyll theme'
 description:      'Looking for data science jobs!'
 url:              https://jingwenlin.github.io

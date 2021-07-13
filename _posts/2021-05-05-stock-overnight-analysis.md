@@ -11,7 +11,7 @@ From Googling a bit, we know stock prices fluctuate most between 14:30 and 10:30
 
 The end result is displayed in the table below:
 
-![Table of Ranked Stock Data Analysis](public/images/stock_table_screenshot.png)
+![Table of Ranked Stock Data Analysis](/public/images/stock_table_screenshot.png)
 
 To see how we got there, we'll first take a look at where to get the data from.
 
