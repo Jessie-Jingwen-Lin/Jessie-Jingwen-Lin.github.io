@@ -5,7 +5,7 @@ usemathjax: true
 ---
 
 
-This post talks about a stock trading strategy developed by me --- ranking stocks based on statistical data of recent historical stock prices, over the full range of all availble stocks on NASDAQ and NYSE. With this strategy you buy stocks in the afternoon, then sell them on the next day's morning, so I call it overnight trading to distinguish from day trading. 
+This post talks about a stock trading strategy developed by me --- ranking stocks based on statistical data of recent stock prices, over the full range of all availble stocks on NASDAQ and NYSE. With this strategy you buy stocks in the afternoon, then sell them on the next day's morning, so I call it overnight trading to distinguish from day trading. 
 
 From observing the stock data, I know stock prices fluctuate most between 14:30 and 10:30 the next day. So I wanted to explore the strategy of buying shares at 14:30, and then selling the next day at 10:30. The goal is to maximize stock trading profit by choosing the stocks that will have the best gains from 14:30 to 10:30. 
 
@@ -35,7 +35,7 @@ def get_all_tickers():
 ```
 <!-- <script src="https://gist.github.com/jingwenlin/b406450811b312a906bb88fe4e836f1b.js"></script> -->
 
-Then, it is time to download the rercent historical stock prices for all of the tickers. To download the stock prices, I used the API provided by [Yahoo finance](https://finance.yahoo.com) which can be accessed by the yf.finance package(link). See the code below:
+Then, it is time to download the recent stock prices for all of the tickers. To download the stock prices, I used the API provided by [Yahoo finance](https://finance.yahoo.com) which can be accessed by the yf.finance package(link). See the code below:
 
 ```python
 def download_from_yahoo(tickers, start, end, interval):
@@ -69,7 +69,7 @@ Datetime                               ...
 
 ## Preprocessing Data
 
-Since I want to see the historical gains between 14:30 and 10:30 the next day (since that is the trading strategy), I selected stock prices at 14:30 and at 10:30 the next day, and organized the data into a Pandas dataframe indexed by date. See below:
+Since I want to see the recent overnight gains between 14:30 and 10:30 the next day (since that is the trading strategy), I selected stock prices at 14:30 and at 10:30 the next day, and organized the data into a Pandas dataframe indexed by date. See below:
 
 ```
 Transformed data:
@@ -90,7 +90,7 @@ Datetime                         ...
 ```
 <!-- <script src="https://gist.github.com/jingwenlin/470ff2da455e71aad4e8c4c360874277.js"></script> -->
 
-Once the data is in this format, I can use Pandas to quickly compute means, standard deviations, etc. of overnight profit ratios over various historical time periods (1 week, 1 month, etc.). 
+Once the data is in this format, I can use Pandas to quickly compute means, standard deviations, etc. of overnight profit ratios over various time periods (1 week, 1 month, etc.). 
 
 ## Results and Website
 
