@@ -56,7 +56,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -72,15 +72,24 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: #755C38;
+  /*color: #755C38;*/
+
+
+  /*background-color: #d28415;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;*/
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;
+  color: #ffffff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: "Abril", serif;
+  font-size: 2.5rem;
 }
 
 /* Sidebar nav */
@@ -224,11 +233,12 @@ a.sidebar-nav-item:focus {
 
 /* Blue */
 .theme-base-0d .sidebar {
-  background-color: #6a9fb5;
+  /*background-color: #063b61c7;*/
+  background-color: #f4bf75;
 }
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
+  color: #d28445;
 }
 
 /* Magenta */
@@ -247,4 +257,20 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+
+/*.social {
+  font-size: 0.75em;
+}*/
+
+.profile-pic {
+  border: 3px solid #eee;
+  /*border: 3px solid #ec91cc;*/
+  /*border: 10px solid #33c;*/
+  border-radius: 50%;
+
+  /*padding:3px;
+  border:3px solid #d28445;
+  background-color:#fff;*/
 }

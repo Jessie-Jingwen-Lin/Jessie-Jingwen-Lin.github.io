@@ -1,8 +1,11 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+
+    <img class="profile-pic" src="/public/images/profile_small.jpg" />
+
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
+        <a href="/">
           {{ site.title }}
         </a>
       </h1>
@@ -10,24 +13,36 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blog Posts</a>
 
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
 
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="/">Home</a>
+
+      <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blog Posts</a> -->
+
+
+      <a href="https://github.com/jingwenlin" class="sidebar-nav-item horizontal-item social" target="_blank">
+        <i class="fa fa-github"></i>
+        <span class="only-desktop">&nbsp;jingwenlin</span>
+      </a>
+
+
+      <a href="mailto:jessiejingwen@gmail.com" class="sidebar-nav-item horizontal-item social" target="_blank">
+        <i class="fa fa-envelope"></i>
+        <span class="only-desktop">&nbsp;jessiejingwen@gmail.com</span>
+      </a>
+
+
+      <a href="/public/files/resume.pdf" class="sidebar-nav-item horizontal-item social" target="_blank">
+        <i class="fa fa-file"></i>
+        &nbsp;Resume
+      </a>
+
+
+
 
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+
+
   </div>
 </div>
