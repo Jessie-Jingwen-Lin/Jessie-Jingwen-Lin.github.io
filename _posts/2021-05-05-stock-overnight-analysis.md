@@ -35,7 +35,7 @@ def get_all_tickers():
 ```
 <!-- <script src="https://gist.github.com/jingwenlin/b406450811b312a906bb88fe4e836f1b.js"></script> -->
 
-Then, it is time to download the recent stock prices for all of the tickers. To download the stock prices, I used the API provided by [Yahoo finance](https://finance.yahoo.com) which can be accessed by the yf.finance package(link). See the code below:
+Then, it is time to download the recent stock prices for all of the tickers. To download the stock prices, I used the API provided by [Yahoo finance](https://finance.yahoo.com) which can be accessed by the [yfinance package](https://github.com/ranaroussi/yfinance). See the code below:
 
 ```python
 def download_from_yahoo(tickers, start, end, interval):
@@ -113,5 +113,5 @@ I was also curious to see if I could use any machine learning models to predict 
 
 The first 5 columns are the x columns, and the last column is the y column. This data is fed into simple linear regression, polynomial regression, and neural network regression to predict the 6th overnight price differences. Unfortunately, none of the regression models picked up any trend, and all of them were predicting the mean of overnight price differences in the training set. However, this wasn't surprising, because using one model to fit all stocks is essentially asking the model to be versatile enough to fit all different types of stocks.
 
-So I then converted the y column to be a categorical column judging by if $$ \lvert y-\mathrm{mean}(x_1, \cdots ,x_5) \rvert > A \cdot \mathrm{std}(x_1, \cdots, x_5) $$. If the difference between y and the mean were bigger than the standard deviation, it indicates the stock is unstable. Otherwise, the stock is stable. Then, the categorized data is fed into LSTM, logistic regression and many other classification models to train the binary classification models, and then the models are used to predict if a stock is stable or unstable. Again, none of the models were able to learn anything. All of the models yielded a 50% accuracy on the test set. In the future I'll be looking at investigating if variations on the classification problem may yield better results.
+So I then converted the y column to be a categorical column judging by if $$ \lvert y-\mathrm{mean}(x_1, \cdots ,x_5) \rvert > A \cdot \mathrm{std}(x_1, \cdots, x_5) $$. If the difference between y and the mean were bigger than the standard deviation, it indicates the stock is unstable. Otherwise, the stock is stable. Then, the categorized data is fed into LSTM, logistic regression and many other classification models to train the binary classification models, and then the models are used to predict if a stock is stable or unstable in the test set. Again, none of the models were able to learn anything. All of the models yielded a 50% accuracy on the test set. In the future I'll be looking at investigating if variations on the classification problem may yield better results.
 
