@@ -2,10 +2,12 @@
 layout: post
 title: Stock Overnight Trading Ranking
 usemathjax: true
+image: /public/images/stockprofilepic.png
+summary: A stock trading strategy developed by me — ranking stocks based on statistical data of recent stock prices, over the full range of all available stocks on NASDAQ and NYSE.
 ---
 
 
-This post talks about a stock trading strategy developed by me --- ranking stocks based on statistical data of recent stock prices, over the full range of all availble stocks on NASDAQ and NYSE. With this strategy you buy stocks in the afternoon, then sell them on the next day's morning, so I call it overnight trading to distinguish from day trading. 
+This post talks about a stock trading strategy developed by me --- ranking stocks based on statistical data of recent stock prices, over the full range of all available stocks on NASDAQ and NYSE. With this strategy you buy stocks in the afternoon, then sell them on the next day's morning, so I call it overnight trading to distinguish from day trading.
 
 From observing the stock data, I know stock prices fluctuate most between 14:30 and 10:30 the next day. So I wanted to explore the strategy of buying shares at 14:30, and then selling the next day at 10:30. The goal is to maximize stock trading profit by choosing the stocks that will have the best gains from 14:30 to 10:30. 
 
