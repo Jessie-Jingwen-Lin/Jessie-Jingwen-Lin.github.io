@@ -2,6 +2,8 @@
 layout: post
 title: "HR Analytics: Job Change of Data Scientists (A Kaggle Challenge)"
 usemathjax: false
+image: /public/images/HRprofilepic.png
+summary: This project showcases visualizing a dataset containing categorical and numerical data, and also build a pipeline that deals with missing data, imbalanced data and predicts a binary outcome. The original dataset can be found on Kaggle, and full details including all of my code is available in a notebook on Kaggle.
 ---
 In this article, I will showcase visualizing a dataset containing categorical and numerical data, and also build a pipeline that deals with missing data, imbalanced data and predicts a binary outcome. The original dataset can be [found on Kaggle](https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists), and full details including all of my code is available [in a notebook on Kaggle](https://www.kaggle.com/jingwenlin/hr-data-vis-catboost-with-bayesian-optimization).
 
