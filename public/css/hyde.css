@@ -130,6 +130,17 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
+.full-content {
+  /* padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem; */
+
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
@@ -269,8 +280,52 @@ a.sidebar-nav-item:focus {
   /*border: 3px solid #ec91cc;*/
   /*border: 10px solid #33c;*/
   border-radius: 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 
   /*padding:3px;
   border:3px solid #d28445;
   background-color:#fff;*/
+}
+
+
+.profile-pic-small {
+  border: 3px solid #eee;
+  /*border: 3px solid #ec91cc;*/
+  /*border: 10px solid #33c;*/
+  border-radius: 50%;
+  height: 80%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  display: inline;
+  margin:unset;
+
+  /*padding:3px;
+  border:3px solid #d28445;
+  background-color:#fff;*/
+}
+
+
+
+
+.topbar {
+  height: 80px;
+  background-color: #f4bf75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.topbar-item {
+  margin-right: 50px;
+}
+
+.topbar-last-item {
+  margin-right: 0;
+}
+
+.topbar a {
+  color: #755C38
 }
