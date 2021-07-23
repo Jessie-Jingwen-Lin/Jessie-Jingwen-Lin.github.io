@@ -2,47 +2,69 @@
 layout: gallery
 title: Photos
 usemathjax: false
+photos:
+- url: /public/images/IMG_0001.jpg
+  title: Bunbun shooting lasers out of his eyes
+- url: /public/images/IMG_0073.jpg
+  title: Pompom trying to steal food with her staring
+- url: /public/images/IMG_0087.jpg
+  title: Bunbun likes to 'take full advantage of Pompom' here he is using Pompom as his pillow
+- url: /public/images/IMG_4596.jpg
+  title: Bunbun loving the head tickle
+- url: /public/images/IMG_6920.jpg
+  title: Washing his paws with my water
+- url: /public/images/IMG_7272.jpg
+  title: He is 'hunting' humans on top of the kitchen cabinet
+- url: /public/images/IMG_7276.jpg
+  title: Hunting the string on top of the kitchen cabinet
+- url: /public/images/IMG_7377.jpg
+  title: Sneaking out of the apartment
+- url: /public/images/IMG_7793.jpg
+  title: Us hiking together
+- url: /public/images/IMG_8436.jpg
+  title: Being silly together
+- url: /public/images/IMG_8686.jpg
+  title: Fell asleep while I'm coding
+- url: /public/images/IMG_8747.jpg
+  title: Grooming turning to a war
+- url: /public/images/IMG_8794.jpg
+  title: Them being them
+- url: /public/images/IMG_8819.jpg
+  title: Taking full advantage of my bed
+- url: /public/images/IMG_8948.jpg
+  title: They can be really strechy
+- url: /public/images/IMG_8956.jpg
+  title: More snuggling
+- url: /public/images/IMG_9021.jpg
+  title: Pompom watching snowflakes drop
+- url: /public/images/IMG_9127.jpg
+  title: Pompom sound asleep
+- url: /public/images/IMG_9306.jpg
+  title: Someone is about to be 'drilled'
+- url: /public/images/IMG_9316.jpg
+  title: The world and the cat
+- url: /public/images/IMG_9819.jpg
+  title: Him being a king in my bed
+- url: /public/images/IMG_9999.jpg
+  title: More snuggling
+- url: /public/images/IMG_9370.jpg
+  title: This is something interesting. In order to control their weight and avoid cat ighting when feeding, we made each one of them a feed box with a scanning cat door that only allows the designated cat to get in. This is Pompom screaming and death staring at me to ask me for MORE FOOD! Haha, she always wants more food.
 ---
 
 <h1>Feline Photo Gallery!</h1>
 
 <div id="grid">
 
-	<a class="grid-item-link">
-	  <div class="grid-item">
-	  	<img src="/public/images/stockprofilepic.png" class="post-image" />
-	  	<p class="summary">
-	  		This is a description of the image
-	  	</p>
-	  </div>
-	</a>
-
-	<a class="grid-item-link">
-	  <div class="grid-item">
-	  	<img src="/public/images/stockprofilepic.png" class="post-image" />
-	  	<p class="summary">
-	  		This is a description of the image
-	  	</p>
-	  </div>
-	</a>
-
-	<a class="grid-item-link">
-	  <div class="grid-item">
-	  	<img src="/public/images/stockprofilepic.png" class="post-image" />
-	  	<p class="summary">
-	  		This is a description of the image
-	  	</p>
-	  </div>
-	</a>
-
-	<a class="grid-item-link">
-	  <div class="grid-item">
-	  	<img src="/public/images/stockprofilepic.png" class="post-image" />
-	  	<p class="summary">
-	  		This is a description of the image
-	  	</p>
-	  </div>
-	</a>
+	{% for image in page.photos %}
+		<a class="grid-item-link">
+			<div class="grid-item">
+				<img src="{{ image.url }}" class="post-image" />
+				<p class="summary">
+					{{ image.title }}
+				</p>
+			</div>
+		</a>
+	{% endfor %}
 
 </div>
 

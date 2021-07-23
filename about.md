@@ -8,4 +8,4 @@ I discovered data science and machine learning while I was a master student doin
 
 But don't get me wrong, I am not suggesting replacing every hands-on experiment with simulation programming, as many scientific phenomena still have to be observed by trying it out yourself or seeing it with your own eyes. Rather, I meant the joy and passion brought by data science is something I had never experienced. So, yes, data science has changed my life!
 
-A few interesting things about me. I have two very cute kitties, and I enjoy walking my kitties in harnesses(click here to see them walking in harnesses). I also practice yoga actively to help me go through the ups and downs in life. Lastly, I am learning French and hope I can travel in Europe using French soon :-)
+A few interesting things about me. I enjoy spending time with my two very cute kitties, and I have a [feline photo gallery](/gallery) just for them. I also practice yoga actively to help me go through the ups and downs in life. Lastly, I have been learning French hoping I can use my French to travel in Europe soon :-)
