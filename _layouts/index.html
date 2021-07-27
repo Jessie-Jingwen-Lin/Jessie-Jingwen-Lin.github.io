@@ -56,15 +56,67 @@
       }
     </style>
 	  
+    <style>
+      .background-div {
+        background: center/50% url('/public/images/background.jpg');
+        /* background-size: cover; */
+        width: 100vw;
+        height: 100vh;
+
+        margin-top: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+      }
+
+      .home-content-container {
+
+        /* margin: auto; */
+        text-align: center;
+      }
+
+      hr {
+        /* background-color: black; */
+        border-top: 1px solid black;
+      }
+    </style>
 	</head>
 
+  <!-- <body class="theme-base-0d"> -->
   <body class="theme-base-0d">
 
-    {% include sidebar.html %}
+    {% include sidebar_top.html %}
 
-    <div class="content content-column container">
+    <header class="background-div">
+      <div class="home-content-container">
+        <img class="profile-pic" src="/public/images/mountain_photo_downsample.jpg" />
+
+        <div class="name">
+          {{ site.title }}
+        </div>
+
+        <hr />
+
+        <div class="name">
+          {{ site.description }}
+        </div>
+
+        <hr />
+
+        <a>My Projects</a>
+        <a>Resume</a>
+      </div>
+      
+      <!-- <div class="home-content-container">
+        Jessie (Jingwe) Lin
+      </div> -->
+    </header>
+
+    <div class="content full-content">
       {{ content }}
     </div>
+
 
   </body>
 </html>
