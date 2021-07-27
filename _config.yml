@@ -15,3 +15,13 @@ baseurl:
 
 paginate:         5
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+sitemap:
+  include_posts:
+    - "/index.html"
+
+# plugins_dir: [jekyll-sitemap, jekyll-seo-tag]
