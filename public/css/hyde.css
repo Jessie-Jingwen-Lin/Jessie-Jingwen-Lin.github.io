@@ -294,7 +294,7 @@ a.sidebar-nav-item:focus {
   /*border: 3px solid #ec91cc;*/
   /*border: 10px solid #33c;*/
   border-radius: 50%;
-  width: 80%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 
@@ -329,7 +329,12 @@ a.sidebar-nav-item:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .topbar-item {
