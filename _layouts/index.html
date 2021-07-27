@@ -58,27 +58,52 @@
 	  
     <style>
       .background-div {
-        background: center/50% url('/public/images/background.jpg');
+        background: center/70% url('/public/images/background.jpg');
         /* background-size: cover; */
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 80px);
 
         margin-top: 80px;
 
+        
+      }
+
+      .background-overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.747);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+      }
+
+      .home-flexbox {
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center; 
       }
 
       .home-content-container {
-
         /* margin: auto; */
         text-align: center;
+        color: wheat;
+      }
+      .home-content-container a {
+        color: wheat;
+      }
+
+      h1.name {
+        /* color: wheat; */
       }
 
       hr {
         /* background-color: black; */
-        border-top: 1px solid black;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: none;
+        margin-left: auto;
+        margin-right: auto;
+        
       }
     </style>
 	</head>
@@ -89,24 +114,36 @@
     {% include sidebar_top.html %}
 
     <header class="background-div">
-      <div class="home-content-container">
-        <img class="profile-pic" src="/public/images/mountain_photo_downsample.jpg" />
+      <div class="background-overlay">
+        <div class="home-flexbox">
+          <div class="home-content-container">
+            <img class="profile-pic" src="/public/images/mountain_photo_downsample.jpg" />
 
-        <div class="name">
-          {{ site.title }}
+            <h1 class="name">
+              {{ site.title }}
+            </h1>
+
+            <hr style="width: 70%"/>
+
+            <!-- <p></p> -->
+
+            <p class="name">
+              {{ site.description }}
+            </p>
+
+            <hr style="width: 20%"/>
+
+            <a 
+              href="#section-projects"
+              onclick="scroller.scrollTo('section-projects'); return false;"
+              class="highlight" 
+              style="margin-right: 2rem">Projects</a>
+            <a 
+              href="/resume.pdf"
+              class="highlight">Resume</a>
+          </div>
         </div>
-
-        <hr />
-
-        <div class="name">
-          {{ site.description }}
-        </div>
-
-        <hr />
-
-        <a>My Projects</a>
-        <a>Resume</a>
-      </div>
+      </div>  
       
       <!-- <div class="home-content-container">
         Jessie (Jingwe) Lin
@@ -115,8 +152,8 @@
 
     <div class="content full-content">
       {{ content }}
+
+      <p style="font-size: xx-small;">&copy; 2021 Jingwen Lin</p>
     </div>
-
-
   </body>
 </html>

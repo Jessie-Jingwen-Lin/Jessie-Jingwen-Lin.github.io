@@ -33,8 +33,9 @@
 
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
-@media (min-width: 48em) {
+/* @media (min-width: 48em) {
   html {
     font-size: 16px;
   }
@@ -43,7 +44,7 @@ html {
   html {
     font-size: 20px;
   }
-}
+} */
 
 
 /*
@@ -143,7 +144,7 @@ a.sidebar-nav-item:focus {
   margin-left: 4rem;
   margin-right: 4rem; */
 
-  width: 55%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -322,14 +323,9 @@ a.sidebar-nav-item:focus {
 
 
 
-
 .topbar {
   height: 80px;
   background-color: #f4bf75;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-bottom: 2em; */
 
   position: fixed;
   top: 0;
@@ -337,14 +333,77 @@ a.sidebar-nav-item:focus {
   z-index: 999;
 }
 
-.topbar-item {
-  margin-right: 50px;
+.topbar-centering {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.topbar-last-item {
-  margin-right: 0;
+.topbar-centering-left-item {
+  /* margin: 0 2rem 0 0; */
+  margin: 0 1rem 0 0;
 }
 
-.topbar a {
+.topbar-centering-left-last-item {
+  /* margin: 0 0 0 2rem; */
+  margin: 0 0 0 0rem;
+}
+
+.topbar-centering-right-item {
+  margin: 0 0.9rem 0 0;
+}
+
+.topbar-centering-right-last-item {
+  margin: 0 0 0 0rem;
+}
+
+.topbar-left-spacer-right {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-left-item {
+  margin-left: 2rem;
+  /* width: 30%; */
+  /* min-width: 200px; */
+}
+
+.topbar-right-item {
+  margin-right: 2rem;
+  /* width: 50% */
+  font-size: 0.75em;
+  /* font-variant: small-caps; */
+}
+
+.topbar-centering a {
   color: #755C38
+}
+
+.highlight {
+  border: 2px solid;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 20px;
+}
+
+.highlight:hover {
+  text-decoration: none;
+}
+
+.topbar .highlight:hover {
+  color: #f4bf75;
+  /* color: transparent; */
+  background-color: #755C38;
+  border-color: #755C38;
+}
+
+.home-content-container .highlight:hover {
+  color: rgb(56, 55, 51);
+  background: wheat;
+  border-color: wheat;
 }

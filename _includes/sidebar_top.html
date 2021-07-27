@@ -1,22 +1,35 @@
 <div class="topbar">
-  <img class="profile-pic-small topbar-item" src="/public/images/mountain_photo_downsample.jpg" />
+  <div class="topbar-left-spacer-right">
 
+  
+    <div class="topbar-centering topbar-left-item">
+      <a href="/">
+        <h3 class="topbar-centering-left-item">{{ site.title }}</h3>
+      </a>
 
-  <a class="topbar-item" href="/">Home</a>
-  <a class="topbar-item" href="/about">About Me</a>
+      <a href="https://github.com/Jessie-Jingwen-Lin" class="social topbar-centering-left-item" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
 
+      <a href="mailto:jessiejingwen@gmail.com" class="social topbar-centering-left-item" target="_blank">
+        <i class="fa fa-envelope"></i>
+      </a>
 
-  <a href="https://github.com/Jessie-Jingwen-Lin" class="social topbar-item" target="_blank">
-    <i class="fa fa-github"></i>
-  </a>
+      <a href="https://www.linkedin.com/in/jiwlin/" class="social topbar-centering-left-last-item" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
 
-
-  <a href="mailto:jessiejingwen@gmail.com" class="social topbar-item" target="_blank">
-    <i class="fa fa-envelope"></i>
-  </a>
-
-
-  <a href="/public/files/resume.pdf" class="social topbar-last-item" target="_blank">
-    <i class="fa fa-file"></i>
-  </a>
+    <div class="topbar-centering topbar-right-item">
+      <a class="topbar-centering-right-item{% if page.url == '/' %} active{% endif %}" href="/">Home</a>
+      <a class="topbar-centering-right-item{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
+      <a class="topbar-centering-right-item{% if page.url == '/gallery/' %} active{% endif %}" href="/gallery">Felines</a>
+      <a class="topbar-centering-right-item" href="/">Husband</a>
+      <a 
+        class="topbar-centering-right-item highlight" 
+        {% if page.url == '/' %}onclick="scroller.scrollTo('section-projects'); return false;"{% endif %}
+        href="/#section-projects">Projects</a>
+      <a class="topbar-centering-right-last-item highlight" href="/">Resume</a>
+    </div>
+  </div>
 </div>
