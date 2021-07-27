@@ -98,15 +98,22 @@ html {
 }
 .sidebar-nav-item {
   display: block;
-  line-height: 1.75;
+  line-height: 2.5;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;
 }
-.sidebar-nav-item.active {
+
+.active {
   font-weight: bold;
 }
+
+.horizontal-menu {
+  display: flex; 
+  justify-content: space-between;
+}
+
 
 /* Sticky sidebar
  *
@@ -271,9 +278,16 @@ a.sidebar-nav-item:focus {
 }
 
 
-/*.social {
-  font-size: 0.75em;
-}*/
+.social {
+  /*padding-right: 0px;*/
+  text-decoration: none;
+  /*font-size: 0.75em;*/
+}
+
+.social:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
 
 .profile-pic {
   border: 3px solid #eee;

@@ -15,34 +15,35 @@
     <nav class="sidebar-nav">
 
 
-      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="/">Home</a>
-      <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about">About Me</a>
+      <div class="sidebar-nav-item horizontal-menu">
+        <a class="{% if page.url == '/' %}active{% endif %}" href="/">Home</a>
+        <a class="{% if page.url == '/about/' %}active{% endif %}" href="/about">About Me</a>
+        <a href="/public/files/resume.pdf" target="_blank">
+          <!-- <i class="fa fa-file"></i>&nbsp; -->
+          Resume
+        </a>
+      </div>
 
+      
       <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blog Posts</a> -->
 
 
-      <a href="https://github.com/Jessie-Jingwen-Lin" class="sidebar-nav-item horizontal-item social" target="_blank">
-        <i class="fa fa-github"></i>
-        <span class="only-desktop">&nbsp;Jessie-Jingwen-Lin</span>
-      </a>
+      <div class="sidebar-nav-item horizontal-menu" style="width: 80%; margin: 0 auto;">
+        <a href="https://github.com/Jessie-Jingwen-Lin" class="horizontal-item social" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
 
-      <a href="https://www.linkedin.com/in/jiwlin/" class="sidebar-nav-item horizontal-item social" target="_blank">
-        <i class="fa fa-linkedin"></i>
-        <span class="only-desktop">&nbsp;Jessie (Jingwen) Lin</span>
-      </a>
+        <a href="https://www.linkedin.com/in/jiwlin/" class="horizontal-item social" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
 
-      <a href="mailto:jessiejingwen@gmail.com" class="sidebar-nav-item horizontal-item social" target="_blank">
-        <i class="fa fa-envelope"></i>
-        <span class="only-desktop">&nbsp;jessiejingwen@gmail.com</span>
-      </a>
-
-
-      <a href="/public/files/resume.pdf" class="sidebar-nav-item horizontal-item social" target="_blank">
-        <i class="fa fa-file"></i>
-        &nbsp;Resume
-      </a>
+        <a href="mailto:jessiejingwen@gmail.com" class="horizontal-item social" target="_blank">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
 
 
+      <p class="sidebar-nav-item">&copy; 2021 Jingwen Lin</p>
 
 
     </nav>

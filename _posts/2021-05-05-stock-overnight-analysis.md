@@ -6,6 +6,8 @@ image: /public/images/stockprofilepic.png
 summary: A stock trading strategy developed by me — ranking stocks based on statistical data of recent stock prices, over the full range of all available stocks on NASDAQ and NYSE.
 ---
 
+<i style="font-size: smaller; color: grey">Contact me for possible collaborations on this project.</i>
+
 
 This post talks about a stock trading strategy developed by me --- ranking stocks based on statistical data of recent stock prices, over the full range of all available stocks on NASDAQ and NYSE. With this strategy you buy stocks in the afternoon, then sell them on the next day's morning, so I call it overnight trading to distinguish from day trading.
 
