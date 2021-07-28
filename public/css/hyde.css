@@ -138,6 +138,10 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
+.content-start {
+  margin-top: 80px;
+}
+
 .full-content {
   /* padding-top: 4rem;
   padding-bottom: 4rem;
@@ -282,7 +286,6 @@ a.sidebar-nav-item:focus {
 .social {
   /*padding-right: 0px;*/
   text-decoration: none;
-  /*font-size: 0.75em;*/
 }
 
 .social:hover {
@@ -325,7 +328,9 @@ a.sidebar-nav-item:focus {
 
 .topbar {
   height: 80px;
-  background-color: #f4bf75;
+  background-color: #f4bf75e5;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
   position: fixed;
   top: 0;
@@ -382,27 +387,27 @@ a.sidebar-nav-item:focus {
   color: #755C38
 }
 
-.highlight {
+.prominent-button {
   border: 2px solid;
   padding-left: 0.8em;
   padding-right: 0.8em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
-.highlight:hover {
+.prominent-button:hover {
   text-decoration: none;
 }
 
-.topbar .highlight:hover {
+.topbar .prominent-button:hover {
   color: #f4bf75;
   /* color: transparent; */
   background-color: #755C38;
   border-color: #755C38;
 }
 
-.home-content-container .highlight:hover {
+.home-content-container .prominent-button:hover {
   color: rgb(56, 55, 51);
   background: wheat;
   border-color: wheat;

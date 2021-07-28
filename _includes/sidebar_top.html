@@ -3,11 +3,14 @@
 
   
     <div class="topbar-centering topbar-left-item">
-      <a href="/">
+      <a href="/" style="color: #d28445">
         <h3 class="topbar-centering-left-item">{{ site.title }}</h3>
       </a>
 
-      <a href="https://github.com/Jessie-Jingwen-Lin" class="social topbar-centering-left-item" target="_blank">
+      <a 
+        href="https://github.com/Jessie-Jingwen-Lin" 
+        class="social topbar-centering-left-item" 
+        target="_blank">
         <i class="fa fa-github"></i>
       </a>
 
@@ -24,12 +27,12 @@
       <a class="topbar-centering-right-item{% if page.url == '/' %} active{% endif %}" href="/">Home</a>
       <a class="topbar-centering-right-item{% if page.url == '/about/' %} active{% endif %}" href="/about">About</a>
       <a class="topbar-centering-right-item{% if page.url == '/gallery/' %} active{% endif %}" href="/gallery">Felines</a>
-      <a class="topbar-centering-right-item" href="/">Husband</a>
+      <a class="topbar-centering-right-item" href="https://donaldpinckney.com" target="_blank">Husband</a>
       <a 
-        class="topbar-centering-right-item highlight" 
+        class="topbar-centering-right-item prominent-button" 
         {% if page.url == '/' %}onclick="scroller.scrollTo('section-projects'); return false;"{% endif %}
         href="/#section-projects">Projects</a>
-      <a class="topbar-centering-right-last-item highlight" href="/">Resume</a>
+      <a class="topbar-centering-right-last-item prominent-button" href="/resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
 </div>
